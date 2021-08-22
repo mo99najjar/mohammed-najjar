@@ -6,15 +6,35 @@
             Exercise 2  WEB summer course
         </title>
         <link rel="stylesheet" href="cv.css"> 
+        <script src="cv.js" ></script>
     </head> 
-    <body>
-        <h1> mohammed najjar </h1>
+  
+        <body onload="name_change()">
+       
+      
         <div class="Navigations">
-            <div class="item1"> <h2>Personal information</h2></div>
-            <div class="item2"> <h2>Work experience</h2></div>
-            <div class="item3"> <h2>Education</h2></div>
+            <div id="Div1" class="item0">  
+                <h1> mohammed najjar </h1></div>
 
+            <div class="item1">
+                    <div class="typing-demo">
+                      personal information.
+                    </div>
+            </div>
+               
+            <div  class="item2">
+                <div class="typing-demo">
+                    Work experience.
+                  </div>
+            </div>
+
+            <div class="item3"> 
+                <div class="typing-demo">
+                    Education.
+                  </div>
+            </div>
       </div>
+    
       <form> 
            <h2> Make contact </h2>    
            <p> Fill in your information and we will make sure to get back to you</p>
@@ -30,5 +50,7 @@
             <textarea type="text" id="message" cols="40" rows="7"> </textarea> <br>
             <input type="submit" value="Send">
       </form>
+
+      
 
     </body>

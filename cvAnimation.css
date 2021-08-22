@@ -1,0 +1,14 @@
+div{
+    height: 100vh;
+    width: 100vw;
+    background-image:  url("zl1-2020.jpg");
+    animation-name: backgroundImage ;
+    animation-direction: 4s ;
+    animation-iteration-count: infinite ;
+
+}
+@keyframes backgroundImage { 
+    from {background-image:  url("zl1-2020.jpg");}
+    to{ background-image:  url("gt500-2020.jpg");}
+
+}

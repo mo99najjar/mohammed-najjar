@@ -12,8 +12,27 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-
-
+.typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
 
     .grid-container{
          display:grid;
@@ -21,18 +40,26 @@ body{
         'header1 header2 header3';
     }
 
+    .item0{
+        font-size: 40px;
+    }
+
     .item1 {
+        
         grid-area: header1;
         padding: 20px ;
         border: 2px solid black;
         margin: 20px;
-        }
+        display: flex;
+    }
+        
 
     .item2 {
         grid-area: header2;
         padding: 20px ;
         border: 2px solid black;
         margin: 20px;
+        display: flex;
     }
 
     .item3 {
@@ -40,4 +67,15 @@ body{
         padding: 20px ;
         border: 2px solid black;
         margin: 20px;
+        display: flex;
     }
+
+
+
+
+
+
+     
+
+
+
